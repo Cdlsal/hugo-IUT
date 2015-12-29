@@ -245,3 +245,28 @@ footer {
     display: none;
   }
 }
+
+/*artist*/
+.artist-1{
+  background: url('http://a.madeinamericafest.com/wp-content/uploads/2015/07/MIA-Grid-Modest_Mouse.jpg') center center;
+}
+
+.artist-2{
+  background: url('http://a.madeinamericafest.com/wp-content/uploads/2015/07/grid-bassnectar.jpg') center center;
+}
+
+.artist-3{
+  background: url('http://a.madeinamericafest.com/wp-content/uploads/2015/07/MIA-Grid-J_Cole.jpg') center center;
+}
+
+.artist-4{
+  background: url('http://a.madeinamericafest.com/wp-content/uploads/2015/07/MIA-Grid-Meek_Mill.jpg') center center;
+}
+
+.background-artist{
+  height:280px;
+  color: white;
+}
+
+
+
