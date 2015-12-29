@@ -10,6 +10,26 @@ body {
   font-family:Arial,sans-serif;
 }
 
+/* VIDEO FULLSCRENN CSS */
+video{position:fixed;top:50%;left:50%;min-width:100%;min-height:100%;width:auto;height:auto;z-index:-100;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);background:url(img/film.jpg) no-repeat;background-size:cover;-webkit-transition:1s opacity;transition:1s opacity}
+
+video#bgvid {
+  position: relative; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background: url(film.jpg) no-repeat;
+  background-size: cover;
+}
+
+video { display: block; }
+
+@media screen and (max-device-width: 800px) {
+html { background: url(film.jpg) #000 no-repeat center center fixed; }
+#bgvid { display: none; }
+}
+
+video#bgvid { transition: 1s opacity; }
+
 /* fix bs3 horizontal scrollbar bug */
 .row { margin: 0; padding: 0 }
 
