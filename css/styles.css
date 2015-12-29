@@ -10,26 +10,6 @@ body {
   font-family:Arial,sans-serif;
 }
 
-/* VIDEO FULLSCRENN CSS */
-video{position:fixed;top:50%;left:50%;min-width:100%;min-height:100%;width:auto;height:auto;z-index:-100;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);background:url(img/film.jpg) no-repeat;background-size:cover;-webkit-transition:1s opacity;transition:1s opacity}
-
-video#bgvid {
-  position: relative; right: 0; bottom: 0;
-  min-width: 100%; min-height: 100%;
-  width: auto; height: auto; z-index: -100;
-  background: url(film.jpg) no-repeat;
-  background-size: cover;
-}
-
-video { display: block; }
-
-@media screen and (max-device-width: 800px) {
-html { background: url(film.jpg) #000 no-repeat center center fixed; }
-#bgvid { display: none; }
-}
-
-video#bgvid { transition: 1s opacity; }
-
 /* fix bs3 horizontal scrollbar bug */
 .row { margin: 0; padding: 0 }
 
@@ -127,15 +107,16 @@ img.grayscale {
 }
 
 .header {
-  height: 80%;
-  background: #f68076 url('http://www.bootply.com/assets/example/pt_topo_l.png') repeat center center fixed;
+  height: 100%;
 }
 
 /* use alt in navbar and header for different color */
 
+/*
 .alt {
   background-color: #6E28C9;
 }
+*/
 
 .alt .lead {
   color: #3B0496;
@@ -221,3 +202,46 @@ footer {
 }
 
 /* -- end custom css for Bootstrap 3.x --*/
+
+/*video*/
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('http://dev2.slicejack.com/fullscreen-video-demo/img/videoframe.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
