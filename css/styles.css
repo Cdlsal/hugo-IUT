@@ -56,9 +56,10 @@ img.grayscale {
 
 
 .scroll-down svg {
-    width: 100%;
     fill: #fff;
-    margin-top: 7%;
+    position: absolute;
+    bottom: 2%;
+}
 }
 
 .scroll-top {
@@ -310,6 +311,7 @@ footer {
 }
 
 
+
 .first {
     margin-right: 5%;
 }
@@ -321,6 +323,29 @@ footer {
     transition: 0.3s opacity 0.9s ease-in-out;
 }
 
+@media (max-width: 1300px) {
+  .header h1 {
+    font-size: 80px;
+  }
+  .header h2 {
+    font-size: 40px;
+  }
+  .header h3 {
+    font-size: 35px;
+  }
+}
+    
+@media (max-width: 767px) {
+  .header h1 {
+    font-size: 60px
+  }
+  .header h2 {
+    font-size: 30px;
+  }
+  .header h3 {
+    font-size: 25px;
+  }
+}
 
 
 /*artist*/
@@ -343,6 +368,10 @@ footer {
 .background-artist{
   height:280px;
   color: white;
+}
+
+.background-artist h1{
+ text-align: center;
 }
 
 
