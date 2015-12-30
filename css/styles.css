@@ -368,11 +368,18 @@ footer {
 .background-artist{
   height:280px;
   color: white;
+  z-index:100;
+  background-color: rgba(0, 0, 255, 0.5);
 }
 
+.artist-1 .artist-2 .artist-3 .artist-4:hover{
+
+}
 .background-artist h1{
  text-align: center;
 }
+
+
 
 
 
