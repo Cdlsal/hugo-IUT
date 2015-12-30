@@ -13,16 +13,28 @@ body {
 /* fix bs3 horizontal scrollbar bug */
 .row { margin: 0; padding: 0 }
 
+/* load fonts */
+
+@font-face {
+  font-family: 'Franklin Gothic Heavy Regular';
+  src: url('../fonts/FranklinGothicHeavyRegular.eot');
+  src: local('x'),
+    url('../fonts/FranklinGothicHeavyRegular.woff') format('woff'),
+    url('FranklinGothicHeavyRegular.otf') format('opentype'),
+    url('FranklinGothicHeavyRegular.svg') format('svg');
+}
+
 
 /* use special fonts in certain elements */
-h1,h2,h3,h4,.lead,.btn,.navbar a {
+lead,.btn,.navbar a {
   text-transform:uppercase;
   font-family:'Voltaire',Arial,sans-serif;
   letter-spacing:2px;
 }
 
-h1 {
-  font-size:50px;
+h1, h2, h3, h4 {
+  text-transform:uppercase;
+  font-family:'Franklin Gothic Heavy Regular';
 }
 
 /* make images gray */
@@ -37,15 +49,16 @@ img.grayscale {
 }
 
 .scroll-down a {
-   color:#ffffff;
+   /*color:#ffffff;
    text-decoration: none;
+   bottom:2%;*/
 }
 
-.scroll-down {
-   /*position:fixed;
-   bottom:20%;
-   right:0%;
-   color:#f9f9f9;*/
+
+.scroll-down svg {
+    width: 100%;
+    fill: #fff;
+    margin-top: 7%;
 }
 
 .scroll-top {
@@ -92,13 +105,33 @@ img.grayscale {
 
     
 .header h1 {
-  font-size:80px;
-  -webkit-text-stroke: 1px rgba(f,f,f,0.1);
-  color:#431a6d;
-  color:#fff;
-  margin-left:-5px;
-  margin-bottom:5px;
+  font-size:108px;
+  color:#000;
+  margin-left:auto;
+  margin-right:auto;
+  top:20%;
+  bottom:80%;
   text-transform:uppercase;
+}
+
+.header h2 {
+  font-size:50px;
+  color:#fff;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: ;
+  text-transform:uppercase;
+}
+
+.header h3 {
+  font-size:35px;
+  color:#000;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: ;
+  text-transform:uppercase;
+}
+
 }
 
 .header .lead {
@@ -238,13 +271,57 @@ footer {
 
 @media (max-width: 767px) {
   .fullscreen-bg {
-    background: url('http://dev2.slicejack.com/fullscreen-video-demo/img/videoframe.jpg') center center / cover no-repeat;
+    background: url('../img/phone-background.jpg') center center / cover no-repeat;
   }
 
   .fullscreen-bg__video {
     display: none;
   }
 }
+
+/* Content Video */
+
+.logo{
+    margin-top: 1%;
+    width: 12%;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.box_home{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    font-size: 1.25em;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 5% 0 0 0;
+    width: 280px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+#box_home a{
+   font-family: 'Franklin Gothic Heavy Regular';
+    font-size: 30px;
+}
+
+
+.first {
+    margin-right: 5%;
+}
+
+.active .box_home {
+    -webkit-transition: 0.3s opacity 0.9s ease-in-out;
+    -moz-transition: 0.3s opacity 0.9s ease-in-out;
+    -o-transition: 0.3s opacity 0.9s ease-in-out;
+    transition: 0.3s opacity 0.9s ease-in-out;
+}
+
+
 
 /*artist*/
 .artist-1{
