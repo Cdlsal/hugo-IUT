@@ -48,10 +48,18 @@ img.grayscale {
    background-color:#fff;
 }
 
-.scroll-down a {
-   /*color:#ffffff;
-   text-decoration: none;
-   bottom:2%;*/
+.scroll-down {
+   animation: bounce 0.70s ease-in 0.30s infinite alternate both;
+   position: absolute;
+}
+
+@keyframes bounce {
+  from {
+    bottom: 25px;
+  }
+  to {
+    bottom: 15px;
+  }
 }
 
 
@@ -144,24 +152,17 @@ img.grayscale {
   height: 100%;
 }
 
-/* use alt in navbar and header for different color */
-
-/*
-.alt {
-  background-color: #6E28C9;
-}
-*/
-
-.alt .lead {
-  color: #3B0496;
-}
 
 .alt.affix {
-  background-color:#4C06AB;
+  background-color: rgba(80, 80, 80, 1);
 }
 
-.alt li a:hover, .alt li.active {
-  background-color:#5D17BA;
+.alt.affix li a:hover, .alt.affix li a:active, .alt.affix li.active {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.alt li a:hover, .alt a:hover, .alt li.active {
+  background-color: rgba(80, 80, 80, 0.4);
 }
 
 
@@ -294,7 +295,7 @@ footer {
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
-    border: 3px solid #ffffff;
+    border: 8px solid #ffffff;
     font-size: 1.25em;
     position: relative;
     display: inline-block;
@@ -306,11 +307,14 @@ footer {
 }
 
 #box_home a{
-   font-family: 'Franklin Gothic Heavy Regular';
+    font-family: 'Franklin Gothic Heavy Regular';
     font-size: 30px;
 }
 
-
+#box_home a:hover{
+   text-decoration: none;
+   color: #00a9e7;
+}
 
 .first {
     margin-right: 5%;
@@ -372,14 +376,6 @@ footer {
   background-color: rgba(0, 0, 255, 0.5);
 }
 
-.artist-1 .artist-2 .artist-3 .artist-4:hover{
-
-}
 .background-artist h1{
  text-align: center;
 }
-
-
-
-
-
