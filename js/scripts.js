@@ -51,7 +51,8 @@ $('.pause').click(function() {
 /* highlight the top nav as scrolling occurs */
 $('body').scrollspy({ target: '#navbar' })
 
-$('#sec2').parallax("center", 1500, 0.5, true);
+/* Parrallax effect */
+$('#sec2').parallax("center", 1200, 0.5, true);
 
 
 });
