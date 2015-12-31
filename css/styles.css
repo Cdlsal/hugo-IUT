@@ -112,6 +112,9 @@ img.grayscale {
   background-color:#d46054;
 }
 
+.navbar-collapse {
+  background-color:#0261ba;
+}
     
 .header h1 {
   font-size:108px;
@@ -150,11 +153,12 @@ img.grayscale {
 
 .header {
   height: 100%;
+  background-color: rgba(50, 100, 255, 0.5);
 }
 
 
 .alt.affix {
-  background-color: rgba(80, 80, 80, 1);
+  background-color: #0261ba;
 }
 
 .alt.affix li a:hover, .alt.affix li a:active, .alt.affix li.active {
@@ -210,7 +214,7 @@ img.grayscale {
 .callout {
   color: #ffffff;
   padding-top:7%;
-  height: 100%;
+  height: 500px;
   width: 100%;
   background: url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -300,7 +304,7 @@ footer {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    margin: 5% 0 0 0;
+    margin: 2% 0 0 0;
     width: 280px;
     padding-top: 11px;
     padding-bottom: 11px;
@@ -313,7 +317,7 @@ footer {
 
 #box_home a:hover{
    text-decoration: none;
-   color: #00a9e7;
+   color: #00baff;
 }
 
 .first {
@@ -353,28 +357,44 @@ footer {
 
 
 /*artist*/
-.artist-1{
-  background: url('http://a.madeinamericafest.com/wp-content/uploads/2015/07/MIA-Grid-Modest_Mouse.jpg') center center;
-}
-
-.artist-2{
-  background: url('http://a.madeinamericafest.com/wp-content/uploads/2015/07/grid-bassnectar.jpg') center center;
-}
-
-.artist-3{
-  background: url('http://a.madeinamericafest.com/wp-content/uploads/2015/07/MIA-Grid-J_Cole.jpg') center center;
-}
-
-.artist-4{
-  background: url('http://a.madeinamericafest.com/wp-content/uploads/2015/07/MIA-Grid-Meek_Mill.jpg') center center;
-}
-
 .background-artist{
   height:280px;
   color: white;
-  z-index:100;
-  background-color: rgba(0, 0, 255, 0.5);
+  padding:0px;
 }
+
+.background-artist .audio{
+  background-color: rgba(66, 139, 202, 0.5);
+  width:100%;
+  height:100%;
+  text-align:center;
+}
+
+.audio > i {
+  font-size: 120px;
+  line-height: 120px;
+}
+
+.audio > i:hover {
+  font-size: 130px;
+}
+
+#artist-1{
+  background: url('http://a.madeinamericafest.com/wp-content/uploads/2015/07/MIA-Grid-Modest_Mouse.jpg') center center;
+}
+
+#artist-2{
+  background: url('http://a.madeinamericafest.com/wp-content/uploads/2015/07/grid-bassnectar.jpg') center center;
+}
+
+#artist-3{
+  background: url('http://a.madeinamericafest.com/wp-content/uploads/2015/07/MIA-Grid-J_Cole.jpg') center center;
+}
+
+#artist-4{
+  background: url('http://a.madeinamericafest.com/wp-content/uploads/2015/07/MIA-Grid-Meek_Mill.jpg') center center;
+}
+
 
 .background-artist h1{
  text-align: center;

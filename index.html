@@ -7,7 +7,7 @@
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -17,6 +17,13 @@
 
 <div class="navbar navbar-fixed-top alt" data-spy="affix" data-offset-top="1">
   <div class="container">
+    <div class="navbar-header">
+       <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </div>
     <div class="navbar-collapse collapse" id="navbar">
       <ul class="nav navbar-nav">
         <li><a href="#home">Home</a></li>
@@ -31,9 +38,9 @@
 
 <div id="home" class="header alt vert">
   <div class="fullscreen-bg">
-        <video loop="" muted="" autoplay="" poster="img/videoframe.jpg" class="fullscreen-bg__video">
-            <source src="img/film.mp4" type="video/mp4">
-            <source src="img/film.webm" type="video/webm">
+        <video loop="" muted="" autoplay="" poster="img/phone-background.jpg" class="fullscreen-bg__video">
+            <source src="img/IceMusicFestival.mp4" type="video/mp4">
+            <source src="img/IceMusicFestival.webm" type="video/webm">
         </video>
     </div>
 
@@ -54,88 +61,90 @@
     </a>
 </div>
 
-
-
 <div id="sec1">
     <div class="row">
-      <div class="col-md-3 col-sm-6 col-xs-12 background-artist artist-1">
-        <h1>Artiste 1</h1>
-        <p class="lead">Sous-titres</p>
+      <div id="artist-1" class="col-md-3 col-sm-6 col-xs-12 background-artist">
+          <div class="infos">
+            <h1>Artiste 1</h1>
+            <p class="lead">Sous-titres</p>
+          </div>
+          <div class="audio">
+            <div style="height:30%"></div>
+            <i audio-file="1" class="fa fa-play-circle play"></i>
+            <i audio-file="1" class="fa fa-pause-circle pause"></i>
+          </div>
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 background-artist artist-2">
-        <h1>Artiste 2</h1>
-        <p class="lead">Sous-titres</p>
+      <div id="artist-2" class="col-md-3 col-sm-6 col-xs-12 background-artist">
+        <div class="infos">
+            <h1>Artiste 2</h1>
+            <p class="lead">Sous-titres</p>
+          </div>
+          <div class="audio">
+            <div style="height:30%"></div>
+            <i audio-file="2" class="fa fa-play-circle play"></i>
+            <i audio-file="2" class="fa fa-pause-circle pause"></i>
+          </div>
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 background-artist artist-3">
-        <h1>Artiste 3</h1>
-        <p class="lead">Sous-titres</p>
+      <div id="artist-3" class="col-md-3 col-sm-6 col-xs-12 background-artist">
+          <div class="infos">
+            <h1>Artiste 3</h1>
+            <p class="lead">Sous-titres</p>
+          </div>
+          <div class="audio">
+            <div style="height:30%"></div>
+            <i audio-file="3" class="fa fa-play-circle play"></i>
+            <i audio-file="3" class="fa fa-pause-circle pause"></i>
+          </div>
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 background-artist artist-4">
-        <h1>Artiste 4</h1>
-        <p class="lead">Sous-titres</p>
+      <div id="artist-4" class="col-md-3 col-sm-6 col-xs-12 background-artist">
+          <div class="infos">
+            <h1>Artiste 4</h1>
+            <p class="lead">Sous-titres</p>
+          </div>
+          <div class="audio">
+            <div style="height:30%"></div>
+            <i audio-file="4" class="fa fa-play-circle play"></i>
+            <i audio-file="4" class="fa fa-pause-circle pause"></i>
+          </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-3 col-sm-6 col-xs-12 background-artist artist-2">
-        <h1>Artiste 5</h1>
-        <p class="lead">Sous-titres</p>
+      <div id="artist-2" class="col-md-3 col-sm-6 col-xs-12 background-artist">
+        <div class="infos">
+            <h1>Artiste 5</h1>
+            <p class="lead">Sous-titres</p>
+          </div>
+          <div class="audio">
+          </div>
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 background-artist artist-3">
-        <h1>Artiste 6</h1>
-        <p class="lead">Sous-titres</p>
+      <div id="artist-3" class="col-md-3 col-sm-6 col-xs-12 background-artist">
+        <div class="infos">
+            <h1>Artiste 6</h1>
+            <p class="lead">Sous-titres</p>
+          </div>
+          <div class="audio">
+          </div>
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 background-artist artist-4">
-        <h1>Artiste 7</h1>
-        <p class="lead">Sous-titres</p>
+      <div id="artist-4" class="col-md-3 col-sm-6 col-xs-12 background-artist">
+        <div class="infos">
+            <h1>Artiste 7</h1>
+            <p class="lead">Sous-titres</p>
+          </div>
+          <div class="audio">
+          </div>
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 background-artist artist-1">
-        <h1>Artiste 8</h1>
-        <p class="lead">Sous-titres</p>
+      <div id="artist-1" class="col-md-3 col-sm-6 col-xs-12 background-artist">
+        <div class="infos">
+            <h1>Artiste 8</h1>
+            <p class="lead">Sous-titres</p>
+          </div>
+          <div class="audio">
+          </div>
       </div>
     </div>
 </div>
 
-<div class="featurette" id="sec2">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1>Amazing Features</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2 col-md-offset-2 text-center">
-        <div class="featurette-item">
-          <i class="icon-rocket"></i>
-          <h4>Rocket</h4>
-          <p>Up-up-and-away with this starter template.</p>
-        </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <div class="featurette-item">
-          <i class="icon-magnet"></i>
-          <h4>Magnet</h4>
-          <p>For you are a magnet and I am steel.</p>
-        </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <div class="featurette-item">
-          <i class="icon-shield"></i>
-          <h4>Shield</h4>
-          <p>Protect yourself. Don't design like it's 1999.</p>
-        </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <div class="featurette-item">
-          <i class="icon-pencil"></i>
-          <h4>Scholar</h4>
-          <p>Because lead pencils are pretty smart looking.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="callout" id="sec3">
+<div class="callout" id="sec2">
   <div class="vert">
     <div class="col-md-12 text-center"><h2>Random People With Smiles</h2></div>
     <div class="col-md-12 text-center">&nbsp;</div>
@@ -337,8 +346,8 @@
 </footer>
 
 	<!-- script references -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script type="text/javascript" src="js/jquery.parallax-1.1.js"></script>
+		<script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-1.1.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
