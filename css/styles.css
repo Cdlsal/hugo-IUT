@@ -77,7 +77,6 @@ img.grayscale {
 .vert {
   vertical-align: middle;
   width:100%;
-  padding-top:4%;
   text-align:center;
 }
 
@@ -225,6 +224,20 @@ img.grayscale {
   background-size: cover;
 }
 
+.filter-for-tickets-section{
+        background-color: rgba(153, 153, 255, 0.4);
+}
+
+.fullscreen{
+  height: 70%;
+  width: 100%;
+  background: url(../img/tickets-bg.jpg) no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .gallery {
   padding: 50px 0;
 }
@@ -290,7 +303,7 @@ footer {
 /* Content Video */
 
 .logo{
-    margin-top: 7%;
+    margin-top: 11%;
     width: 12%;
     margin-left:auto;
     margin-right:auto;
@@ -452,3 +465,17 @@ footer {
     margin-left: 66.66%;
     overflow: hidden;
 }
+
+*/ tickets section */
+
+.logo-billet{
+    width: 10%;
+}
+
+.content-tickets{
+    padding-top: 14.30%;
+    padding-bottom: 14.30%;
+}
+
+
+
