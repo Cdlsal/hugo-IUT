@@ -464,6 +464,7 @@ footer {
 
 .logo-billet{
     width: 10%;
+    padding-bottom: 16%;
 }
 
 .content-tickets{
@@ -471,5 +472,26 @@ footer {
     padding-bottom: 14.30%;
 }
 
+/* Geting To Ice Music Festival */
 
+#sec5 h1{
+    text-transform: none
+}
 
+.gettingto{
+  padding: 2% 0;
+  background-color:#f1f1f1;
+}
+
+.train {
+    height: 500px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+.bus {
+    height: 500px;
+    padding: 50px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
