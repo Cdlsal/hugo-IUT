@@ -112,8 +112,11 @@ img.grayscale {
   background-color:#d46054;
 }
 
-.navbar-collapse {
-  background-color:#0261ba;
+@media (max-width: 768px)
+{
+    .navbar-header, .navbar-collapse {
+        background-color:#0261ba;
+    }
 }
     
 .header h1 {
@@ -213,10 +216,9 @@ img.grayscale {
 
 .callout {
   color: #ffffff;
-  padding-top:7%;
   height: 500px;
   width: 100%;
-  background: url(../img/slide1-bg.jpg) no-repeat center center fixed; 
+  background: url(../img/slide1-bg.jpg) no-repeat fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -288,7 +290,7 @@ footer {
 /* Content Video */
 
 .logo{
-    margin-top: 1%;
+    margin-top: 7%;
     width: 12%;
     margin-left:auto;
     margin-right:auto;
@@ -401,4 +403,52 @@ footer {
 
 .background-artist h1{
  text-align: center;
+}
+
+/* PERFORMANCE TIMES */
+
+.performance-times .menu{
+    background-color:#3ea4ef;
+}
+
+.performance-times{
+    background-color:#fff;
+}
+
+
+.performance-times-title h1{
+  padding-top: 1%; padding-bottom: 1%;
+  color:white;
+}
+
+.timeline-day{
+    padding-top: 1%; padding-bottom:20px;
+    color:white;
+    font-size: 30px;
+    text-transform: none;
+    border-bottom: black;
+    text-decoration: none;
+}
+
+.timeline-day:hover, .timeline-day.active{
+    box-shadow: inset 0px -8px 0 0px #014896;
+    cursor:pointer;
+}
+
+.performance-times .timeline img{
+    width: 100%;
+}
+
+#friday{
+    overflow: hidden;
+}
+
+#saturday{
+    margin-left: 33.33%;
+    overflow: hidden;
+}
+
+#sunday{
+    margin-left: 66.66%;
+    overflow: hidden;
 }

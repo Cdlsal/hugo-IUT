@@ -52,10 +52,26 @@ $('.pause').click(function() {
 $('body').scrollspy({ target: '#navbar' })
 
 /* Parrallax effect */
-$('#sec2').parallax("center", 1200, 0.5, true);
+$('#sec2').parallax("center", 1400, 0.5, true);
 
 
+/* performance times, select effect */
+
+    // On cache la zone de texte
+    $('#saturday, #sunday').hide();
+
+   // toggle() lorsque le lien avec l'ID #toggler est cliqué
+   $('.timeline-day').click(function()
+  {
+       $('#friday, #saturday, #sunday').hide();
+       $('.active').removeClass('active');
+       var day = $(this).attr("day");
+       eval("$('#"+ day +"').fadeIn();");
+       $(this).addClass('active');
+   });
 });
+
+
 
 
 
