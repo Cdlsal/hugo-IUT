@@ -52,7 +52,7 @@ $('.pause').click(function() {
 $('body').scrollspy({ target: '#navbar' })
 
 /* Parrallax effect */
-$('.parallax ').parallax();
+$('.parallax').parallax();
 
 
 /* performance times, select effect */

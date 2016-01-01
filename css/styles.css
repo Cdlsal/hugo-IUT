@@ -1,8 +1,5 @@
 /* -- custom css for Bootstrap 3.x --*/
 
-/* move special fonts to HTML head for better performance */
-@import url(http://fonts.googleapis.com/css?family=Voltaire);
-
 html,
 body {
   height: 100%;
@@ -28,7 +25,7 @@ body {
 /* use special fonts in certain elements */
 lead,.btn,.navbar a {
   text-transform:uppercase;
-  font-family:'Voltaire',Arial,sans-serif;
+  font-family:'Franklin Gothic Heavy Regular',Arial,sans-serif;
   letter-spacing:2px;
 }
 
@@ -111,8 +108,7 @@ img.grayscale {
   background-color:#d46054;
 }
 
-@media (max-width: 768px)
-{
+@media (max-width: 768px){
     .navbar-header, .navbar-collapse {
         background-color:#0261ba;
     }
@@ -218,20 +214,6 @@ img.grayscale {
   min-height: 500px;
 }
 
-.filter-for-tickets-section{
-        background-color: rgba(153, 153, 255, 0.4);
-}
-
-.fullscreen{
-  height: 70%;
-  width: 100%;
-  background: url(../img/tickets-bg.jpg) no-repeat fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 .gallery {
   padding: 50px 0;
 }
@@ -298,10 +280,9 @@ footer {
 
 .logo{
     margin-top: 4%;
-    width: 12%;
+    width: 175px;
     margin-left:auto;
     margin-right:auto;
-
 }
 
 .box_home{
@@ -361,6 +342,10 @@ footer {
   }
   .header h3 {
     font-size: 25px;
+  }
+  .logo{
+    margin-top: 16%;
+    width: 125px;
   }
 }
 
@@ -451,16 +436,24 @@ footer {
 }
 
 #saturday{
-    margin-left: 33.33%;
     overflow: hidden;
 }
 
 #sunday{
-    margin-left: 66.66%;
     overflow: hidden;
 }
 
-*/ tickets section */
+@media (min-width: 767px) {
+  #saturday{
+    margin-left:33.33%;
+  }
+
+  #sunday{
+    margin-left:66.66%;
+  }
+}
+
+/* tickets section */
 
 .logo-billet{
     width: 10%;
@@ -471,5 +464,6 @@ footer {
     padding-bottom: 14.30%;
 }
 
-
-
+.violet-filter{
+    background-color: rgba(153, 153, 255, 0.4);
+}
