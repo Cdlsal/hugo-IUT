@@ -27,10 +27,12 @@
     <div class="navbar-collapse collapse" id="navbar">
       <ul class="nav navbar-nav">
         <li><a href="#home">Home</a></li>
-        <li><a href="#sec1">Section 1</a></li>
-        <li><a href="#sec2">Section 2</a></li>
-        <li><a href="#sec3">Section 3</a></li>
-        <li><a href="#sec4">Section 4</a></li>
+        <li><a href="#sec1">Line Up</a></li>
+        <li><a href="#sec2">Schedule</a></li>
+        <li><a href="#sec3">Tickets</a></li>
+        <li><a href="#sec4">Access</a></li>
+        <li><a href="#sec5">Social</a></li>
+        <li><a href="#sec6">Contact</a></li>
       </ul>
     </div>
    </div>
@@ -49,9 +51,9 @@
       <h1 class="home_h1">ICE MUSIC FESTIVAL</h1>
       <h2 class="home_h2">GEILO NORWAY 2016</h2>
       <h3 class="home_h2">JANUARY 22-24</h3>
-      <div id="box_home">
-      <a href="#artists-section" class="box_home first">VIEW ARTIST</a>
-      <a href="#tickets-section" class="box_home">BUY TICKETS</a>
+      <div class="box_parallax">
+        <a href="#" id="artist-button" class="box_button first">VIEW ARTIST</a>
+        <a href="#" id="ticket-button" class="box_button">BUY TICKETS</a>
       </div>
    </div>
     <a href="#main" class=scroll-down>
@@ -173,9 +175,9 @@
     <div class="vert">
         <div class="content-tickets">
             <img src="img/logo-billet.png" alt="logo-billet" class="logo-billet">
-                <div id="box_home">
-                    <a href="#daily-pass" class="box_home first text-center">VIEW ARTIST</a>
-                    <a href="#wekend-pass" class="box_home text-center">BUY TICKETS</a>
+                <div class="box_parallax">
+                    <a href="#" class="box_button first text-center">ONE DAY TICKET</a>
+                    <a href="#" class="box_button text-center">FULL FESTIVAL</a>
                 </div>
         </div>
     </div>
@@ -188,7 +190,7 @@
         </div>
     </div>    
     <div class="row">
-            <div class="col-md-6 box">
+            <div class="col-sm-6">
                 <div class="train transport text-center">
                     <img src="img/logo-train.png">
                     <p>The Bergen Railway is one of the most beautiful rail journeys in the world, according to Lonely Planet, the Norwegian National Public Broadcaster NRK, and the national Norwegian newspaper, Aftenposten. So be sure to book your journey in daylight hours!</P>
@@ -200,7 +202,7 @@
                  </div> 
              </div>
         
-            <div class="col-md-6 box">
+            <div class="col-sm-6">
                 <div class="bus transport text-center">
                     <img src="img/logo-bus.png">
                     <p>The shortest route between Oslo and Bergen is Rv 7. The Rv 7 over Hardangervidda and along the Hardanger Fjord is a national tourist route. You can also follow the Rv 50 over the mountains from west to east with the scenery between Aurland and Hol particularly magnificent. From Hol, it is another 10 km to Geilo.</p> 
@@ -214,46 +216,39 @@
 </div>
         
 <div id="sec5" data-parallax="scroll" data-position-y="bottom" data-z-index="-50" data-speed="0.5" data-image-src="./img/enjoy.jpg" data-natural-width="1200" data-natural-height="667">
-    <div class="vert">
-        <div class="enjoy text-center">
+    <div class="vert enjoy">
+        <div class="text-center">
             <div class="h1-h2" >
             <h1>Enjoy<br>The ice vibes</h1>
             <br>
             <br>
-            <h2>SHARE IT TO THE WORLD<h2>
+            <h2>SHARE IT TO THE WORLD</h2>
             </div>
         </div>
-      <img src="img/logo-facebook.png">
-      <img src="img/logo-twitter.png">
-      <img src="img/logo-youtube.png">
+      <a href="https://www.facebook.com/IceMusicFestival/"><img src="img/logo-facebook.png"></a>
+      <a href="https://twitter.com/icemusicgeilo"><img src="img/logo-twitter.png"></a>
+      <a href="https://www.youtube.com/results?search_query=ice+music+festival"><img src="img/logo-youtube.png"></a>
     </div>
 </div>
 
-<div class="vert" id="sec6">
-    <div class="row contact">
-      <div class="col-md-3 text-center">
+<div id="sec6">
+    <div class="contact row">
+      <div class="col-xs-12 col-sm-5 col-md-3 text-center infos">
             <h1>Ice Music Festival:</h1>
             <p>info@icemusicfestival.no</p>
             <br>
-            <br>
-            <br>
             <h2>Press & Media:</h2>
-            <br>
             <p>+44 7780 621405 </p> 
-            <br>
-            <p>ress@icemusicfestival.no</p>
-
-
+            <p>press@icemusicfestival.no</p>
       </div>
-      <div class="col-md-9">
-          <iframe marginwidth="0" scrolling="no" src="https://maps.google.co.uk/maps?q=geilo+norway&amp;ie=UTF8&amp;hq=&amp;hnear=Geilo,+Buskerud,+Norway&amp;gl=uk&amp;t=m&amp;ll=60.250716,12.744141&amp;spn=3.817487,21.09375&amp;z=6&amp;output=embed&amp;wmode=opaque" width="100%" data-embed="true" frameborder="0" marginheight="0" height="340"></iframe>
-            
+      <div class="col-xs-12 col-sm-7 col-md-9 infos">
+          <iframe marginwidth="0" scrolling="no" src="https://maps.google.co.uk/maps?q=geilo+norway&amp;ie=UTF8&amp;hq=&amp;hnear=Geilo,+Buskerud,+Norway&amp;gl=uk&amp;t=m&amp;ll=60.250716,12.744141&amp;spn=3.817487,21.09375&amp;z=6&amp;output=embed&amp;wmode=opaque" width="100%" data-embed="true" frameborder="0" marginheight="0" height="100%"></iframe>      
       </div>
     </div>
-  </div>
+</div>
 
-<footer>
-    <div class="row footer ">
+<footer class="footer">
+    <div class="row">
       <div class="col-md-12 text-center">
         <h1>2015 ICE MUSIC FESTIVAL</h1>
         <h2>MADE BY HUGO</h2>

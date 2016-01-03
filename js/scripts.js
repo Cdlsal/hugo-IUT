@@ -5,6 +5,14 @@ $('.scroll-down').click(function(){
   $('body,html').animate({scrollTop:$('#sec1').offset().top-50}, 1000);
 })
 
+$('#artist-button').click(function(){
+  $('body,html').animate({scrollTop:$('#sec1').offset().top-50}, 1000);
+})
+
+$('#ticket-button').click(function(){
+  $('body,html').animate({scrollTop:$('#sec3').offset().top-50}, 1000);
+})
+
 /* artist audio hover*/
 $('.background-artist').find('.audio').hide();
 
