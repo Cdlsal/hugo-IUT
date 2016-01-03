@@ -21,6 +21,14 @@ body {
     url('FranklinGothicHeavyRegular.svg') format('svg');
 }
 
+@font-face {
+  font-family: 'FranklinGothicDemiRegular';
+  src: url('../fonts/FranklinGothicDemiRegular.eot');
+  src: local('x'),
+    url('../fonts/FranklinGothicDemiRegular.otf') format('opentype'),
+}
+
+
 
 /* use special fonts in certain elements */
 lead,.btn,.navbar a {
@@ -225,10 +233,6 @@ img.grayscale {
 
 .call-to-action .btn {
   margin: 10px;
-}
-
-footer {
-  padding: 100px 0;
 }
 
 /* -- end custom css for Bootstrap 3.x --*/
@@ -465,8 +469,8 @@ footer {
     padding-bottom: 14.30%;
 }
 
-.violet-filter{
-    background-color: rgba(153, 153, 255, 0.4);
+.bleu-filter{
+    background-color: rgba(0, 50, 255, 0.4);
 }
 
 /* Geting To Ice Music Festival */
@@ -479,16 +483,107 @@ footer {
   background-color:#f1f1f1;
 }
 
-.train {
-    height: 500px;
-    border: 1px solid blue;
-    box-sizing: border-box;
+.box {
+    height: 575px;
 }
 
-.bus {
-    height: 500px;
-    padding: 50px;
-    border: 1px solid red;
-    box-sizing: border-box;
+.transport{
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+    margin-top: 55px;
+    padding-top: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 7px;
+    border-left: 1px solid #dedfe2;
+    border-right: 1px solid #dedfe2;
+    border-bottom: 1px solid #D0D1D5;
+    -webkit-box-shadow: 0 1px 0 0 #dedfe2;
 }
 
+.transport:hover{
+    border-left: 1px solid #c4c5c7;
+    border-right: 2px solid #c4c5c7;
+    border-bottom: 2px solid #bbbbbc;
+    -webkit-box-shadow: 0 1px 0 0 #c4c5c7;
+}
+
+    .transport img{
+        width: 14%;
+        padding-bottom: 25px;
+    }
+
+    .transport p{
+        font-family: 'Franklin Gothic Heavy Regular';
+        text-align: justify;
+        font-size: 17px;
+    }
+
+    .train{
+        padding-bottom: 40px;
+    }
+
+/* enjoy */ 
+
+.enjoy{
+    padding-top: 14.30%;
+    padding-bottom: 14.30%;
+}
+
+.enjoy h1{
+    font-size: 100px;
+    color: #fff;
+}
+
+.enjoy h2{
+    font-family: 'FranklinGothicDemiRegular';
+    font-size: 60px;
+    color: #fff;
+}
+
+.vert img{
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 10%;
+    }
+
+/* Contact Infos */
+
+.contact{
+    background-color: #f1f1f1;
+    height: 340px;
+    padding: 0px;
+}
+
+.contact h1{
+    font-family: 'FranklinGothicDemiRegular' bold;
+    font-size: 30px;
+    text-transform: none;
+}
+
+.contact h2{
+    font-family: 'FranklinGothicDemiRegular' bold;
+    font-size: 30px;
+    text-transform: none;
+}
+
+.contact p{
+    font-family: 'FranklinGothicDemiRegular';
+    font-size: 20px;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: #2c2c2c;
+    height: 130px;
+}
+
+.footer h1{
+    color: #fff;
+}
+
+.footer h2{
+    color: #acacac;
+}
