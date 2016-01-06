@@ -269,35 +269,63 @@ h1, h2, h3, h4 {
 }
 
 #artist-1{
-  background: url('../img/artists/1.png');
+  background: url('../img/artists/1.jpg');
+  background-size: cover;
 }
 
 #artist-2{
   background: url('../img/artists/2.png') center center;
+  background-size: cover;
 }
 
 #artist-3{
   background: url('../img/artists/3.png');
+  background-size: cover;
 }
 
 #artist-4{
- background: url('../img/artists/4.png') center center;
+ background: url('../img/artists/4.jpg') center center;
+ background-size: cover;
 }
 
 #artist-5{
-  background: url('../img/artists/5.png') center center;
+  background: url('../img/artists/5.jpg') center center;
+  background-size: cover;
 }
 
 #artist-6{
   background: url('../img/artists/6.png');
+  background-size: cover;
 }
 
 #artist-7{
   background: url('../img/artists/7.png');
+  background-size: cover;
 }
 
 #artist-8{
   background: url('../img/artists/8.png') center center;
+  background-size: cover;
+}
+
+#artist-9{
+  background: url('../img/artists/9.jpg');
+  background-size: cover;
+}
+
+#artist-10{
+  background: url('../img/artists/10.jpg');
+  background-size: cover;
+}
+
+#artist-11{
+  background: url('../img/artists/11.jpg');
+  background-size: cover;
+}
+
+#artist-12{
+  background: url('../img/artists/12.jpg') center center;
+  background-size: cover;
 }
 
 .background-artist h1{
